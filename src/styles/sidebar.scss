@@ -1,0 +1,66 @@
+.sidebar {
+  background-color: #2c2f36;
+  color: white;
+  width: 260px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f9a826;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &:hover,
+      &.active {
+        background-color: #f9a826;
+        color: #2c2f36;
+      }
+    }
+  }
+
+  .disconnect {
+    margin-top: auto;
+    padding: 10px 15px;
+    background-color: #5c2fcf;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #4520a7;
+    }
+  }
+
+  .solana-selector {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #eee;
+    color: #2c2f36;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+}

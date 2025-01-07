@@ -1,0 +1,152 @@
+/* Genel Ayarlar */
+.vh-100 {
+  height: 100vh;
+}
+
+.bg-light-subtle {
+  background-color: #f8f9fa; /* Açık arka plan */
+}
+
+/* Sidebar Menü */
+.nav-account {
+  .nav-link {
+    color: #6c757d;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+
+    &.active {
+      font-weight: bold;
+      color: #f9a826; /* Turuncu */
+      background-color: rgba(249, 168, 38, 0.2); /* Turuncu arka plan */
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    i {
+      font-size: 16px;
+    }
+  }
+}
+
+/* Kartlar (Dashboard Widget) */
+.row.mb-5.g-4 {
+  display: flex; /* Flexbox düzeni */
+  flex-wrap: wrap; /* İçeriğin taşması durumunda yeni satır oluştur */
+  justify-content: space-between; /* Kartlar arasında eşit boşluk bırak */
+}
+
+.row.mb-5.g-4 .col-lg-4,
+.row.mb-5.g-4 .col-md-6 {
+  flex: 1 1 calc(33.333% - 16px); /* Her kartın genişliği %33.33 */
+  margin: 8px; /* Kartlar arasına boşluk */
+  max-width: calc(33.333% - 16px); /* Maksimum genişlik ayarı */
+}
+
+.card {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  text-align: center;
+  background-color: white;
+
+  .card-body {
+    span {
+      font-size: 14px;
+      color: #6c757d; /* Açık gri */
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #2c3e50; /* Koyu gri */
+    }
+  }
+}
+
+/* Büyük Kartlar (Tablo Verisi) */
+.card-body.p-lg-5 {
+  background-color: #fff;
+  border-radius: 10px;
+
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+
+  .px-5.py-7 {
+    color: #6c757d;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    border: 1px dashed #ddd;
+    border-radius: 5px;
+  }
+}
+
+/* Butonlar */
+.btn-primary {
+  background-color: #f9a826; /* Turuncu */
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #e68a00; /* Daha koyu turuncu */
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(249, 168, 38, 0.5); /* Turuncu odak efekti */
+  }
+}
+
+/* Kullanıcı Karşılama Metni */
+.mb-4 {
+  span {
+    font-size: 16px;
+    color: #2c3e50;
+  }
+
+  .h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f9a826; /* Turuncu kullanıcı ID */
+  }
+}
+
+/* Dashboard Başlığı ve Açıklaması */
+.mb-5 {
+  h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50; /* Koyu gri */
+  }
+
+  p {
+    font-size: 14px;
+    color: #6c757d;
+    line-height: 1.6;
+  }
+}
+
+/* Mobil ekran için düzen */
+@media (max-width: 768px) {
+  .row.mb-5.g-4 .col-lg-4,
+  .row.mb-5.g-4 .col-md-6 {
+    flex: 1 1 100%; /* Mobilde kartlar alt alta gelir */
+    max-width: 100%; /* Maksimum genişlik tüm ekranı kaplar */
+  }
+}

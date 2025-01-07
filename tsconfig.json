@@ -1,0 +1,38 @@
+// {
+//     "compilerOptions": {
+//       "target": "ES6",
+//       "types": ["jest"],
+//       "module": "ESNext",
+//       "lib": ["dom", "dom.iterable", "esnext"],
+//       "allowJs": true,
+//       "skipLibCheck": true,
+//       "esModuleInterop": true,
+//       "allowSyntheticDefaultImports": true,
+//       "strict": true,
+//       "forceConsistentCasingInFileNames": true,
+//       "moduleResolution": "node",
+//       "resolveJsonModule": true,
+//       "isolatedModules": true,
+//       "noEmit": true,
+//       "jsx": "react-jsx"
+//     },
+//     "include": ["src"],
+//     "exclude": ["node_modules"]
+//   }
+  
+{
+  "compilerOptions": {
+    "target": "es5", // Hedeflenen ECMAScript sürümü
+    "lib": ["dom", "esnext"], // Kullanılacak tarayıcı özellikleri
+    "module": "esnext", // Modül sistemi
+    "moduleResolution": "node", // Node modül çözümü
+    "jsx": "react", // JSX desteği
+    "strict": true, // Sıkı TypeScript kuralları
+    "esModuleInterop": true, // ES Module uyumluluğu
+    "skipLibCheck": true, // Tip kontrolünü atla
+    "resolveJsonModule": true, // JSON modüllerini destekle
+    "isolatedModules": true // Tek dosya modülü
+  },
+  "include": ["src"], // Kaynak dosyaları
+  "exclude": ["node_modules"] // Node modüllerini dışla
+}
