@@ -15,8 +15,8 @@
     "styled-components": "^6.1.13"
   },
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.js --open",
-    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --config webpack/webpack.dev.js --open",
+    "build": "webpack --config webpack/webpack.prod.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
