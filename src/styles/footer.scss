@@ -1,0 +1,30 @@
+.footer-link {
+  text-decoration: none;
+  color: #f9a826;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.dropdown-menu {
+  font-size: 14px;
+
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+
+    i {
+      margin-right: 8px;
+    }
+
+    &:hover {
+      background-color: #f5f5f5;
+    }
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+}
