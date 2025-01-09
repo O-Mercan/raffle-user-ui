@@ -10,12 +10,4 @@ module.exports = merge(common, {
     filename: "[name].[contentHash].bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
-  plugins: [
-    new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      template: "./public/index.html",
-      filename: "index.html",
-    }),
-  ],
-  
 });
